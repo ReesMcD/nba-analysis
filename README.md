@@ -5,3 +5,11 @@ Suite for NBA data analysis
 - [XGBoost documentation](https://xgboost.readthedocs.io/en/latest/)
 - [Shap](https://github.com/shap/shap)
 - [Hyperopt](https://github.com/hyperopt/hyperopt)
+
+## Getting Started
+### 1. Create a virtual environment
+```python -m venv venv```
+### 2. Activate the virtual environment
+```source venv/bin/activate```
+### 3. Install the requirements
+```pip install -r requirements.txt```

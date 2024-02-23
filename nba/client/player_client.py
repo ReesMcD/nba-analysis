@@ -37,7 +37,7 @@ def get_player_game_log(player_id, season):
         opp_team_id = get_team_opponent_id(row[c.TEAM_ID], row[c.GAME_ID])
         logs.loc[index, c.OPP_TEAM_ID] = opp_team_id
 
-    logs.to_csv('./data/{name}_{season}_game_log.csv'.format(name=player_name, season=season), index=False)
+    logs.to_csv('./data/game_logs/{season}/player/{name}_{season}_game_log.csv'.format(name=player_name, season=season), index=False)
     return logs
 
 
@@ -73,7 +73,7 @@ class PlayerClient:
             game_logs = pd.concat([game_logs, df], ignore_index=True)
             print('{player} game logs fetched'.format(player=player))
 
-        game_logs.to_csv('./data/{title}_{season}_game_log'.format(title=title, season=season), index=False)
+        game_logs.to_csv('./data/game_logs/{season}/{title}_{season}_game_log'.format(title=title, season=season), index=False)
         return game_logs
 
 
