@@ -1,11 +1,10 @@
 from hyperopt import fmin, tpe, STATUS_OK, Trials, space_eval
-from tools.gradientboostmodeler import GradientBoostModeler
 
 import numpy as np
 
 
 class HyperParamTuning:
-    def __init__(self, modeler: GradientBoostModeler, space, SEED):
+    def __init__(self, modeler, space, SEED):
         self.modeler = modeler
         self.space = space
         self.SEED = SEED

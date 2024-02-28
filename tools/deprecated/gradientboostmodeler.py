@@ -6,17 +6,19 @@ import numpy as np
 import shap
 
 
+# Make generic modeling class
 class GradientBoostModeler:
     def __init__(self, X, y, SEED):
         self.SEED = SEED
         self.model = None
         self.predictions = None
+        # TODO: Abstract this out
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, y, random_state=SEED)
         self.dtrain = xgb.DMatrix(self.X_train, self.y_train, enable_categorical=True)
         self.dtest = xgb.DMatrix(self.X_test, self.y_test, enable_categorical=True)
 
     def train(self, space, early_stopping_rounds=None):
-        n = int(space['num_boost_round'])
+        n = int(space['n_estimators'])
 
         if 'max_depth' in space:
             space['max_depth'] = int(space['max_depth'])
