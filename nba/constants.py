@@ -181,28 +181,43 @@ TYRESE_MAXEY = 'Tyrese Maxey'
 # Bucks
 GIANIS_ANTETOKOUNMPO = 'Giannis Antetokounmpo'
 DAMIAN_LILLARD = 'Damian Lillard'
+# Bulls
+ZACH_LAVINE = 'Zach Lavine'
+DEMAR_DEROZAN = 'DeMar DeRozan'
 # Cavaliers
 DONOVAN_MITCHELL = 'Donovan Mitchell'
+DARIUS_GARLAND = 'Darius Garland'
 # Celtics
 JAYSON_TATUM = 'Jayson Tatum'
 JAYLEN_BROWN = 'Jaylen Brown'
+KRISTAAPS_PORZINGIS = 'Kristaaps Porzingis'
 # Clippers
 PAUL_GEORGE = 'Paul George'
 KAWHI_LEONARD = 'Kawhi Leonard'
 JAMES_HARDEN = 'James Harden'
 # Grizzlies
 JA_MORANT = 'Ja Morant'
+DESMOND_BANE = 'Desmond Bane'
 # Hawks
 TRAE_YOUNG = 'Trae Young'
+DEJOUNTE_MURRAY = 'Dejounte Murray'
 # Heat
 BAM_ADEBAYO = 'Bam Adebayo'
 JIMMY_BUTLER = 'Jimmy Butler'
+TYLER_HERRO = 'Tyler Herro'
+# Hornets
+TERRY_ROZIER = 'Terry Rozier'
+# Rockets
+JALEN_GREEN = 'Jalen Green'
 # Kings
 DEAARON_FOX = 'De\'Aaron Fox'
 DOMANTAS_SABONIS = 'Domantas Sabonis'
 # Knicks
 JALEN_BRUNSON = 'Jalen Brunson'
 JULIUS_RANDLE = 'Julius Randle'
+# Jazz
+LAURI_MARKKANEN = 'Lauri Markkanen'
+JORDON_CLARKSON = 'Jordon Clarkson'
 # Lakers
 LEBRON_JAMES = 'LeBron James'
 ANTHONY_DAVIS = 'Anthony Davis'
@@ -210,23 +225,42 @@ ANTHONY_DAVIS = 'Anthony Davis'
 PAOLO_BANCHERO = 'Paolo Banchero'
 # Mavericks
 LUKA_DONCIC = 'Luka Doncic'
+KYRIE_IRVING = 'Kyrie Irving'
 # Nuggets
 NIKOLA_JOKIC = 'Nikola Jokic'
 JAMAL_MURRAY = 'Jamal Murray'
+# Nets
+MIKAL_BRIDGES = 'Mikal Bridges'
 # Pacers
 TYRESE_HALIBURTON = 'Tyrese Haliburton'
+PASCAL_SIAKAM = 'Pascal Siakam'
 # Pelicans
 BRAENDON_INGRAM = 'Braendon Ingram'
+CJ_MCCOLLUM = 'CJ McCollum'
+# Pistons
+BOJAN_BOGDANOVIC = 'Bojan Bogdanovic'
+# Raptors
+# Rockets
+FRED_VANVLEET = 'Fred VanVleet'
+# Spurs
+KELDON_JOHNSON = 'Keldon Johnson'
 # Suns
 KEVIN_DURANT = 'Kevin Durant'
 DEVIN_BOOKER = 'Devin Booker'
 # Timberwolves
 ANTHONY_EDWARDS = 'Anthony Edwards'
 KARL_ANTHONY_TOWNS = 'Karl-Anthony Towns'
+# Trail Blazers
+JERAMI_GRANT = 'Jerami Grant'
+ANFERNEE_SIMONS = 'Anfernee Simons'
 # Thunder
 SHAI_GILGEOUS_ALEXANDER = 'Shai Gilgeous-Alexander'
 # Warriors
 STEPHEN_CURRY = 'Stephen Curry'
+KLAY_THOMPSON = 'Klay Thompson'
+# Wizards
+JORDAN_POOLE = 'Jordan Poole'
+KYLE_KUZMA = 'Kyle Kuzma'
 
 
 ALL_STAR_2023_24 = [
@@ -234,6 +268,15 @@ ALL_STAR_2023_24 = [
     ANTHONY_DAVIS, ANTHONY_EDWARDS, PAUL_GEORGE, KAWHI_LEONARD, KARL_ANTHONY_TOWNS, GIANIS_ANTETOKOUNMPO, JOEL_EMBIID,
     TYRESE_HALIBURTON, DAMIAN_LILLARD, JAYSON_TATUM, BAM_ADEBAYO, PAOLO_BANCHERO, JAYLEN_BROWN, JALEN_BRUNSON,
     TYRESE_MAXEY, DONOVAN_MITCHELL, JULIUS_RANDLE
+]
+
+TWENTY_PTS_SCORERS_2022_23 = [
+    JOEL_EMBIID, LUKA_DONCIC, DAMIAN_LILLARD, SHAI_GILGEOUS_ALEXANDER, GIANIS_ANTETOKOUNMPO, JAYSON_TATUM,
+    DONOVAN_MITCHELL, KYRIE_IRVING, JAYLEN_BROWN, TRAE_YOUNG, JA_MORANT, LAURI_MARKKANEN, JULIUS_RANDLE, DEAARON_FOX,
+    ZACH_LAVINE, ANTHONY_EDWARDS, DEMAR_DEROZAN, NIKOLA_JOKIC, PASCAL_SIAKAM, JALEN_BRUNSON, KRISTAAPS_PORZINGIS,
+    JIMMY_BUTLER, JALEN_GREEN, KELDON_JOHNSON, KLAY_THOMPSON, DARIUS_GARLAND, BOJAN_BOGDANOVIC, DESMOND_BANE,
+    KYLE_KUZMA, TERRY_ROZIER, ANFERNEE_SIMONS, JAMES_HARDEN, CJ_MCCOLLUM, JORDON_CLARKSON, JERAMI_GRANT,
+    DEJOUNTE_MURRAY, JORDAN_POOLE, BAM_ADEBAYO, TYRESE_MAXEY, MIKAL_BRIDGES, TYLER_HERRO, JAMAL_MURRAY, PAOLO_BANCHERO
 ]
 
 # GAME_LOG mask

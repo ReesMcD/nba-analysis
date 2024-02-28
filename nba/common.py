@@ -1,4 +1,4 @@
-from nba.client.player_client import PlayerClient, get_player_game_log
+from nba.client.player_client import PlayerClient
 
 import nba.constants as c
 import pandas as pd
@@ -14,7 +14,7 @@ def get_players_stat_std(stat_col, player_list, season_list):
     for player_name in player_list:
         player_id = player_client.get_player_id(player_name)
 
-        log = get_player_game_log(player_id, seasons)
+        log = player_client.get_player_game_log(player_id, seasons)
         stat_mean = log[stat_col].mean()
         std = log[stat_col].std()
         var = log[stat_col].var()
