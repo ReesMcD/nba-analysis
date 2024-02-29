@@ -1,4 +1,7 @@
 # Description: Constants for the NBA API
+FULL_NAME_PARAM = 'full_name'
+ID_PARAM = 'id'
+ABBREVIATION_PARAM = 'abbreviation'
 # Stat constants
 ID = 'ID'
 PLAYER_ID = 'PLAYER_ID'

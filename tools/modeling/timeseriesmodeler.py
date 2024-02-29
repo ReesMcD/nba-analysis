@@ -1,5 +1,5 @@
 from sklearn.model_selection import TimeSeriesSplit
-from tools.modeler import Modeler
+from tools.modeling.modeler import Modeler
 import numpy as np
 
 
