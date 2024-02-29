@@ -1,10 +1,10 @@
+from tools.modeler import Modeler
 from hyperopt import fmin, tpe, STATUS_OK, Trials, space_eval
-
 import numpy as np
 
 
-class HyperParamTuning:
-    def __init__(self, modeler, space, SEED):
+class HyperParamTuner:
+    def __init__(self, modeler: Modeler, space, SEED=1):
         self.modeler = modeler
         self.space = space
         self.SEED = SEED

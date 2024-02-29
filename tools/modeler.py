@@ -5,7 +5,7 @@ import shap
 
 
 class Modeler:
-    def __init__(self, model: XGBRegressor, X_train, X_test, y_train, y_test, SEED=1):
+    def __init__(self, model: XGBRegressor, X_train=None, X_test=None, y_train=None, y_test=None, SEED=1):
         self.model = model
         self.X_train, self.X_test, self.y_train, self.y_test = X_train, X_test, y_train, y_test
         self.SEED = SEED
@@ -48,3 +48,20 @@ class Modeler:
     def shap_values(self):
         explainer = shap.Explainer(self.model)
         return explainer(self.X_test)
+
+    def set_X_test(self, X_test):
+        self.X_test = X_test
+        return self
+
+    def set_y_test(self, y_test):
+        self.y_test = y_test
+        return self
+
+    def set_X_train(self, X_train):
+        self.X_train = X_train
+        return self
+
+    def set_y_train(self, y_train):
+        self.y_train = y_train
+        return self
+
