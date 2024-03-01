@@ -1,9 +1,6 @@
 import nba.client.player_client as pc
 import nba.constants as c
 import pandas as pd
-import numpy as np
-
-from nba.teams import get_team_opponent_id
 
 
 def get_player_profile(player_id, per_mode=c.PER_GAME):
@@ -43,12 +40,6 @@ def get_player_game_log(player_id, season):
 
     logs[c.GAME_DATE] = pd.to_datetime(logs[c.GAME_DATE])
     logs[c.SEASON] = season
-    # logs[c.OPP_TEAM_ID] = np.nan
-
-    # TODO: Remove this and add it as its own function
-    # for index, row in logs.iterrows():
-    #     opp_team_id = get_team_opponent_id(row[c.TEAM_ID], row[c.GAME_ID])
-    #     logs.loc[index, c.OPP_TEAM_ID] = opp_team_id
 
     return logs
 
