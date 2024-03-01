@@ -43,21 +43,24 @@ def get_player_game_log(player_id, season):
 
     logs[c.GAME_DATE] = pd.to_datetime(logs[c.GAME_DATE])
     logs[c.SEASON] = season
-    logs[c.OPP_TEAM_ID] = np.nan
+    # logs[c.OPP_TEAM_ID] = np.nan
 
-    for index, row in logs.iterrows():
-        opp_team_id = get_team_opponent_id(row[c.TEAM_ID], row[c.GAME_ID])
-        logs.loc[index, c.OPP_TEAM_ID] = opp_team_id
+    # TODO: Remove this and add it as its own function
+    # for index, row in logs.iterrows():
+    #     opp_team_id = get_team_opponent_id(row[c.TEAM_ID], row[c.GAME_ID])
+    #     logs.loc[index, c.OPP_TEAM_ID] = opp_team_id
 
     return logs
 
 
 def get_players_game_log(player_id_arr, season):
     game_logs = pd.DataFrame()
+    count = 1
 
     for player_id in player_id_arr:
         df = get_player_game_log(player_id, season)
         game_logs = pd.concat([game_logs, df], ignore_index=True)
-        print('{player_id} game logs fetched'.format(player_id=player_id))
+        print('{count}: {player_id} game logs fetched'.format(count=count, player_id=player_id))
+        count += 1
 
     return game_logs
