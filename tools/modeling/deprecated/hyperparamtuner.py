@@ -1,4 +1,4 @@
-from tools.modeling.modeler import Modeler
+from tools.modeling.deprecated.modeler import Modeler
 from hyperopt import fmin, tpe, STATUS_OK, Trials, space_eval
 import numpy as np
 

@@ -1,5 +1,5 @@
-from tools.modeling.hyperparamtuner import HyperParamTuner
-from tools.modeling.timeseriesmodeler import TimeSeriesModeler
+from tools.modeling.deprecated.hyperparamtuner import HyperParamTuner
+from tools.modeling.deprecated.timeseriesmodeler import TimeSeriesModeler
 from hyperopt import STATUS_OK
 
 
