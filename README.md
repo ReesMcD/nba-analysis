@@ -5,6 +5,7 @@ Suite for NBA data analysis
 - [XGBoost documentation](https://xgboost.readthedocs.io/en/latest/)
 - [Shap](https://github.com/shap/shap)
 - [Hyperopt](https://github.com/hyperopt/hyperopt)
+- [shap-hyperyune](https://github.com/cerlymarco/shap-hypetune/)
 
 ## Getting Started
 ### 1. Create a virtual environment
